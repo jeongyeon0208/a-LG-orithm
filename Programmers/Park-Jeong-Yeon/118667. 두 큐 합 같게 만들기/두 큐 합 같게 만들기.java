@@ -19,7 +19,7 @@ class Solution {
         
         // 무조건 큰쪽에서 하나 빼기
         int i = 0;
-        while(i <= len * 300){
+        while(i <= 3 * len){
             
             if(sum1 > sum2) {
                 int move = q1.poll();
