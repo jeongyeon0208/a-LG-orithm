@@ -50,9 +50,9 @@ jobs: # 워크플로우에서 실행할 작업들
                 new_directory="$PROGRAMMERS_DIR/${folder_name}"
                 
                 # 기존 디렉토리가 존재하면 삭제
-                if [ -d "new_directory" ]; then
-                  rm -rf "new_directory"
-                  echo "기존 디렉토리 삭제: new_directory"
+                if [ -d "$new_directory" ]; then
+                  rm -rf "$new_directory"
+                  echo "기존 디렉토리 삭제: $new_directory"
                 fi
           
                 # 폴더 이동
@@ -76,9 +76,9 @@ jobs: # 워크플로우에서 실행할 작업들
               new_directory="$BAEKJOON_DIR/${problem_number}-${problem_name}"
 
               # 기존 디렉토리가 존재하면 삭제
-              if [ -d "new_directory" ]; then
-                rm -rf "new_directory"
-                echo "기존 디렉토리 삭제: new_directory"
+              if [ -d "$new_directory" ]; then
+                rm -rf "$new_directory"
+                echo "기존 디렉토리 삭제: $new_directory"
               fi
           
               # 파일 이동
